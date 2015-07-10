@@ -2,6 +2,7 @@ a, a:visited { color: #008ECC; }
 a:hover { color: #00B2FF; }
 
 body {
+    font-family: 'PT Serif', serif;
     min-width: 600px;
     margin: 0 auto;
     font-size: 1.125em;
@@ -53,9 +54,7 @@ ul ul, ol ol, ul ol, ol ul {
     margin-top: 0;
     margin-bottom: 0;
 }
-b, strong, em, small, code {
-    line-height: 1;
-}
+b, strong, em, small, code {line-height: 1;}
 sup, sub {
     vertical-align: baseline;
     position: relative;
@@ -74,10 +73,8 @@ h3 > small {
     font-weight:normal;
 }
 section > nav > ul {padding-left:0;}
-section > nav > ul > li {
-    list-style: none;
-}
-p{text-indent: 1.5rem;}
+section > nav > ul > li {list-style: none;}
+p {text-indent: 1.5rem;}
 pre{
     margin: 20px 0px;
     padding-left: 1.5rem;
