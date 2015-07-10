@@ -23,13 +23,14 @@ clean-gh-pages:
 
 gh-pages: clean-gh-pages build
 	git clone `git config --get remote.origin.url` .gh-pages --reference .
-	git -C .gh-pages checkout --orphan gh-pages
+	git -C .gh-pages checkout --orphan master
 	git -C .gh-pages reset
 	git -C .gh-pages clean -dxf
 	cp -r _site/* .gh-pages/
+	cp CNAME .gh-pages/
 	git -C .gh-pages add .
 	git -C .gh-pages commit -m "Update Pages"
-	git -C .gh-pages push origin gh-pages -f
+	git -C .gh-pages push origin master -f
 	rm -rf .gh-pages
 
 .PHONY: clean watch deps
