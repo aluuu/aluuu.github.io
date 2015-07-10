@@ -2,14 +2,18 @@
 
 Hakyll variant of aluuu.github.io.
 
-## Building
+## Getting starter
 
 ```
-cabal configure
-ghc --make -threaded site.hs
-./site
+make watch
 ```
+
+Now, go to your [http://localhost:8000](http://localhost:8000).
 
 ## Deployment
 
-WIP
+```
+make gh-pages
+```
+
+That's it.
